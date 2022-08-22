@@ -12,6 +12,7 @@
   --fw-primary-medium: 500;
   --fw-primary-semi-bold: 600;
 
+  --fs-100: 0.575rem;
   --fs-200: 0.675rem;
   --fs-300: 0.8125rem;
   --fs-400: 0.8125rem;
@@ -40,7 +41,7 @@
   :root {
     --fs-body: var(--fs-400);
     --fs-primary-heading: var(--fs-800);
-    --fs-title: var(--fs-300);
+    --fs-title: var(--fs-200);
 
     --size-100: 0.5rem;
     --size-200: 0.75rem;
@@ -50,7 +51,7 @@
     --size-600: 1.75rem;
     --size-700: 2rem;
     --size-800: 3.25rem;
-    --size-900: 3.25rem;
+    --size-900: 13rem;
   }
 }
 
@@ -321,6 +322,9 @@ img {
     padding-right: 0.25rem;
   }
 
+  .daniel p {
+    padding-right: 1rem;
+  }
   .kira p {
     padding-right: 0.1rem;
   }
