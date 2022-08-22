@@ -19,7 +19,7 @@ Testimonials grid section challenge with responsive layout.
 
 ### Screenshot
 
-![Desktop-screenshot](./screenshots/desktop-design-screenshot.png.png)
+![Desktop-screenshot](./screenshots/design-ss.png)
 
 ### Links
 

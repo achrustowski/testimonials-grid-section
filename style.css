@@ -239,7 +239,7 @@ main {
 
 .heading {
   font-size: var(--fs-primary-heading);
-  font-weight: var(--fw-primary-regular);
+  font-weight: var(--fw-primary-semi-bold);
   line-height: 1.2;
 }
 
@@ -268,7 +268,7 @@ p {
 
 img {
   border-radius: 50%;
-  max-height: 35px;
+  max-height: 30px;
   height: 100%;
 }
 
