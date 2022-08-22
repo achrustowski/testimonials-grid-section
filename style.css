@@ -12,7 +12,8 @@
   --fw-primary-medium: 500;
   --fw-primary-semi-bold: 600;
 
-  --fs-300: 0.75rem;
+  --fs-200: 0.675rem;
+  --fs-300: 0.8125rem;
   --fs-400: 0.8125rem;
   --fs-500: 0.875rem;
   --fs-600: 0.9rem;
@@ -27,11 +28,11 @@
   --size-500: 1.25rem;
   --size-600: 1.5rem;
   --size-700: 1.75rem;
-  --size-800: 3rem;
-  --size-900: 4rem;
+  --size-800: 2rem;
+  --size-900: 6rem;
 
   --fs-body: var(--fs-300);
-  --fs-primary-heading: var(--fs-700);
+  --fs-primary-heading: var(--fs-800);
   --fs-title: var(--fs-200);
 }
 
@@ -48,8 +49,8 @@
     --size-500: 1.5rem;
     --size-600: 1.75rem;
     --size-700: 2rem;
-    --size-800: 4rem;
-    --size-900: 5rem;
+    --size-800: 3.25rem;
+    --size-900: 3.25rem;
   }
 }
 
@@ -237,7 +238,7 @@ main {
 
 .heading {
   font-size: var(--fs-primary-heading);
-  font-weight: var(--fw-primary-semi-bold);
+  font-weight: var(--fw-primary-regular);
   line-height: 1.2;
 }
 
@@ -277,6 +278,12 @@ img {
   }
 }
 
+@media (max-width: 60em) {
+  .grid-container {
+    column-gap: 1.5rem;
+  }
+}
+
 /* Grid layout */
 
 .grid-element {
@@ -290,10 +297,41 @@ img {
   padding-block: var(--size-400);
 }
 
+@media (max-width: 50em) {
+  .grid-element {
+    padding-inline: var(--size-800);
+    padding-block: var(--size-600);
+  }
+
+  .daniel {
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 0%;
+    background-size: 33%;
+  }
+
+  .heading {
+    max-width: 26ch;
+    padding-right: 0.25rem;
+  }
+
+  .daniel p {
+    /* padding-right: var(--size-100); */
+  }
+
+  .kira p {
+    padding-right: 0.1rem;
+  }
+}
+
 @media (min-width: 50em) {
   .daniel {
     grid-row: 1;
     grid-column: 1 / span 2;
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 82% 0%;
+    background-size: 20.75%;
   }
 
   .jonathan {
@@ -304,11 +342,13 @@ img {
   .kira {
     grid-row: 1 / span 2;
     grid-column: 4;
+    box-shadow: 21px 18px 50px -30px hsla(217, 19%, 35%, 0.752);
   }
 
   .jeanette {
     grid-row: 2;
     grid-column: 1;
+    box-shadow: 21px 18px 50px -30px hsla(217, 19%, 35%, 0.752);
   }
 
   .patrick {
